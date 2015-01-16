@@ -12,10 +12,10 @@
 \contentsline {section}{\numberline {4}Form\IeC {\r a}l}{6}
 \contentsline {subsection}{\numberline {4.1}Effektm\IeC {\r a}l}{6}
 \contentsline {subsection}{\numberline {4.2}Resultatm\IeC {\r a}l}{6}
-\contentsline {section}{\numberline {5}Prosjektorganisering}{7}
-\contentsline {subsection}{\numberline {5.1}Roller og ansvar}{7}
-\contentsline {section}{\numberline {6}Metode og Teori}{8}
-\contentsline {section}{\numberline {7}Prosjektplan}{9}
-\contentsline {section}{\numberline {8}Leveranser}{10}
-\contentsline {subsection}{\numberline {8.1}Gantt-diagram}{10}
-\contentsline {subsection}{\numberline {8.2}Hovedlevereranser}{11}
+\contentsline {section}{\numberline {5}Prosjektorganisering}{6}
+\contentsline {subsection}{\numberline {5.1}Roller og ansvar}{6}
+\contentsline {section}{\numberline {6}Metode og Teori}{7}
+\contentsline {section}{\numberline {7}Prosjektplan}{8}
+\contentsline {section}{\numberline {8}Leveranser}{9}
+\contentsline {subsection}{\numberline {8.1}Gantt-diagram}{9}
+\contentsline {subsection}{\numberline {8.2}Hovedlevereranser}{10}
