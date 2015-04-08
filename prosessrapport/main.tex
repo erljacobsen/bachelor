@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper,oneside]{book} % DO NOT CHANGE, UNLESS IF CHANGING STYLE
+
+\usepackage{graphicx,subfigure,listings,amssymb,url,paralist,tabularx,rotating,longtable,lscape}
+\usepackage{layouts,hyperref,fancyhdr,listings,color,times,lipsum,chemfig,wasysym}
+\usepackage[utf8]{inputenc} 
+\usepackage[norsk]{babel} 
+\usepackage[absolute]{textpos}
+\usepackage{system/hiofreport}
+\usepackage{makeidx}
+\usepackage{pdfpages}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{setspace}
+\hypersetup{
+    colorlinks,
+    linkcolor={black},
+    citecolor={black},
+    urlcolor={black}
+}
+
+\makeindex
+
+\begin{document}
+% FRONT MATTER
+    % DO NOT CHANGE
+    %-------------------------------------------------    
+    \includepdf[pages={1}] {titlepage} % Make your own catchy PDF title page, named titlepage.pdf
+    \setcounter{page}{0}
+    \pagenumbering{arabic}
+    
+    \input{boddy/intro.tex}
+    \addcontentsline{toc}{chapter}{Introduksjon}
+    \addcontentsline{toc}{chapter}{Innholdsfortegnelse}
+    \tableofcontents  % DO NOT CHANGE    
+	
+	
+% BODY
+    % YOU MAY CHANGE TITLES AND ORDER (WITHIN LIMITS)
+    %-------------------------------------------------
+   
+    
+    \input{boddy/metodikk}
+    \input{boddy/1_3tool.tex}
+    \input{boddy/konklusjon.tex}
+    \input{boddy/referat}
+    \input{boddy/arbeidslog}
+    \input{boddy/kontrakt.tex}
+    
+    %-------------------------------------------------
+
+
+% BACK MATTER
+    % DO NOT CHANGE
+    %-------------------------------------------------   
+    \bibliographystyle{plain} % IEEE    
+    \bibliography{system/project_bibliography}
+    \addcontentsline{toc}{chapter}{Bibliografi}
+    %-------------------------------------------------
+        
+    % OPTIONAL
+    %-------------------------------------------------
+    %To make a good index is quite laborsome, and perhaps a bit outside the scope in this context    
+    \printindex
+    \addcontentsline{toc}{chapter}{Register}    
+    \appendix
+    
+    %-------------------------------------------------
+    
+\end{document}

@@ -1,0 +1,89 @@
+\documentclass[11pt,a4paper,oneside]{report} % DO NOT CHANGE, UNLESS IF CHANGING STYLE
+\usepackage{graphicx,subfigure,listings,amssymb,url,paralist,tabularx,rotating,longtable,lscape}
+\usepackage{layouts,hyperref,fancyhdr,listings,color,times,lipsum,chemfig,wasysym}
+\usepackage[utf8]{inputenc} 
+\usepackage[norsk]{babel} 
+\usepackage[absolute]{textpos}
+\usepackage{system/hiofreport}
+\usepackage{makeidx}
+\usepackage{pdfpages}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{setspace}
+
+\input{system/meta}
+\input{system/defs}        % DO NOT CHANGE
+
+
+
+\makeindex
+
+\begin{document}
+
+% FRONT MATTER
+    % DO NOT CHANGE
+    %-------------------------------------------------    
+    \includepdf[pages={1}] {titlepage} % Make your own catchy PDF title page, named titlepage.pdf
+    \maketitle
+    \input{1_innledning/1_1preface.tex} % TO BE REMOVED IN FINAL REPORT
+    \cleardoublepage % TO BE REMOVED IN FINAL REPORT
+    \input{1_innledning/1_2abstract.tex}
+    \addcontentsline{toc}{chapter}{Sammendrag}
+    %-------------------------------------------------
+
+    % OPTIONAL
+    %-------------------------------------------------
+    \input{1_innledning/1_3acknowledgements.tex}
+    \addcontentsline{toc}{chapter}{Takk Til}
+    %-------------------------------------------------
+
+	\cleardoublepage % DO NOT CHANGE    
+	\setcounter{tocdepth}{3}
+    \tableofcontents  % DO NOT CHANGE    
+    \cleardoublepage % DO NOT CHANGE    
+    
+    % OPTIONAL
+    %-------------------------------------------------
+
+    %-------------------------------------------------
+       
+    \pagenumbering{arabic} % DO NOT CHANGE, OR REMOVE IF CHANGING STYLE
+    \setcounter{page}{1}       % DO NOT CHANGE, OR REMOVE IF CHANGING STYLE 		
+	
+% BODY
+    % YOU MAY CHANGE TITLES AND ORDER (WITHIN LIMITS)
+    %-------------------------------------------------
+    \input{2_hoveddel/2_1introduction.tex}
+    \input{2_hoveddel/2_2analysis.tex}
+    \input{2_hoveddel/2_3design.tex}
+    \input{2_hoveddel/2_5intervju.tex}
+    \input{2_hoveddel/2_7evaluation.tex}
+    \input{2_hoveddel/2_8discussion.tex}
+    \input{2_hoveddel/2_9conclusion.tex}
+    
+    %-------------------------------------------------
+
+
+% BACK MATTER
+    % DO NOT CHANGE
+    %-------------------------------------------------   
+    \bibliographystyle{plain} % IEEE    
+    \bibliography{system/project_bibliography}
+    \addcontentsline{toc}{chapter}{Bibliografi}
+    %-------------------------------------------------
+        
+    % OPTIONAL
+    %-------------------------------------------------
+    \cleardoublepage    
+    %To make a good index is quite laborsome, and perhaps a bit outside the scope in this context    
+    \printindex
+    \addcontentsline{toc}{chapter}{Register}
+    \cleardoublepage    
+    \appendix
+    
+    %-------------------------------------------------
+    
+    \cleardoublepage    %DO NOT CHANGE
+    \blankpage          %DO NOT CHANGE
+    \blankpage          %DO NOT CHANGE
+\end{document}
